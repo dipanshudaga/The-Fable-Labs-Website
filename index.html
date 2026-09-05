@@ -6,12 +6,9 @@
 <title>The Fable Labs</title>
 <meta name="description" content="The Fable Labs — coming soon.">
 <link rel="icon" href="data:,">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    color-scheme: light;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
   html, body {
@@ -19,49 +16,16 @@
     margin: 0;
   }
   body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background: #eaf3fb url("assets/bg.webp") center / cover no-repeat;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    text-align: center;
-    padding: 24px;
+    background: #11191e url("assets/bg.webp") center / cover no-repeat;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    padding: 44px 64px;
-    box-shadow: 0 8px 40px rgba(20, 30, 40, 0.1);
-  }
-  h1 {
-    margin: 0;
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    font-size: clamp(32px, 5.5vw, 50px);
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    color: #1f2733;
-  }
-  p {
-    margin: 0;
-    font-size: clamp(13px, 2vw, 15px);
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: #4a5568;
+  @media (orientation: portrait) {
+    body {
+      background-image: url("assets/bg-mobile.webp");
+    }
   }
 </style>
 </head>
 <body>
-  <main>
-    <h1>The Fable Labs</h1>
-    <p>Coming Soon</p>
-  </main>
 </body>
 </html>
